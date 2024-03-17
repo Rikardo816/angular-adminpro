@@ -27,7 +27,7 @@ import { ComponentsModule } from '../components/components.module';
     CommonModule,
     RouterModule,
     SharedModule,
-    ComponentsModule,
+    ComponentsModule  
   ],
 })
 export class PagesModule {}
