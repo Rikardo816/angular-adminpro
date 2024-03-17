@@ -6,6 +6,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,12 @@ import { RouterModule } from '@angular/router';
     DashboardComponent,
     PagesComponent,
   ],
-  imports: [CommonModule, SharedModule, RouterModule],
+  imports: [
+    FormsModule,
+    CommonModule,
+    RouterModule,
+    SharedModule,
+    ComponentsModule,
+  ],
 })
 export class PagesModule {}
